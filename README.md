@@ -20,7 +20,7 @@
 </div>
 
 ## 📖 1. Giới thiệu
-- Hệ thống điều khiển máy tính từ xa (Remote Control System) là một giải pháp cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
+- Ứng dụng điều khiển máy tính từ xa (Remote Control) cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
 - Người dùng có thể xem toàn bộ màn hình của máy từ xa.
 - Thao tác chuột, bàn phím như ngồi trực tiếp trước máy.
 - Hỗ trợ kỹ thuật (IT Support)
@@ -28,6 +28,15 @@
 - Quản trị hệ thống & server
 
 ## 🔧 2. Ngôn ngữ lập trình sử dụng: [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
+    Thư viện sử dụng trong Java:
+
+- java.net → Socket, ServerSocket (gửi/nhận dữ liệu).
+
+- java.awt.Robot → điều khiển chuột, bàn phím.
+
+- javax.imageio.ImageIO → đọc/ghi ảnh (truyền màn hình).
+
+- javax.swing → hiển thị giao diện Client.
 
 ## 🚀 3. Các project đã thực hiện
 
