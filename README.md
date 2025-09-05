@@ -23,9 +23,9 @@
 - Ứng dụng điều khiển máy tính từ xa (Remote Control) cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
 - Người dùng có thể xem toàn bộ màn hình của máy từ xa.
 - Thao tác chuột, bàn phím như ngồi trực tiếp trước máy.
-- Hỗ trợ kỹ thuật (IT Support)
-- Làm việc từ xa (Remote Work)
-- Quản trị hệ thống & server
+- Hỗ trợ kỹ thuật (IT Support).
+- Làm việc từ xa (Remote Work).
+- Quản trị hệ thống & server.
 
 ## 🔧 2. Ngôn ngữ lập trình sử dụng: [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
     Thư viện sử dụng trong Java:
