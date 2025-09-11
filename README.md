@@ -20,7 +20,8 @@
 </div>
 
 ## 📖 1. Giới thiệu
-* Ứng dụng điều khiển máy tính từ xa (Remote Control) cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
+    Ứng dụng điều khiển máy tính từ xa (Remote Control) 
+- Cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
 - Hệ thống cho phép một máy tính (Client) có thể kết nối và điều khiển một máy tính khác (Server/Host) theo thời gian thực.
 - Máy chủ (Remote Server): là máy tính bị điều khiển, có nhiệm vụ chia sẻ màn hình và tiếp nhận các lệnh điều khiển từ xa.
 - Máy khách (Remote Client): là máy tính điều khiển, có nhiệm vụ hiển thị màn hình từ xa và gửi các thao tác chuột, bàn phím đến máy chủ.
@@ -43,8 +44,37 @@
 
 ## 🚀 3. Các project đã thực hiện
 
-
-
+    Cấu trúc:
+BTL/
+│
+├── JRE System Library [jre1.8.0_201]   # Thư viện Java
+│
+└── src/
+    └── remote/
+        ├── RemoteClient.java
+        └── RemoteServer.java
+    1. Chuẩn bị
+- Cài Java JDK 8+ (bạn đang dùng jre1.8.0_201 là ok).
+- Máy A: chạy RemoteServer.java (máy bị điều khiển – bạn bè).
+- Máy B: chạy RemoteClient.java (máy điều khiển – bạn).
+- Hai máy phải nằm cùng mạng LAN/WiFi hoặc có thể kết nối qua Internet (cần mở port).
+    2. Lấy địa chỉ IP của Server
+- Trên máy bị điều khiển (máy chạy RemoteServer.java):
+- Windows: mở CMD → gõ ipconfig → lấy IPv4, ví dụ 192.168.1.10.
+- Linux/Mac: mở Terminal → gõ ifconfig
+    3. Chạy chương trình
+- Trên máy bị điều khiển (Server):
+- Mở Eclipse → chuột phải RemoteServer.java → Run As → Java Application.
+- Console sẽ in:
+    Server is running on port 5000...
+    Waiting for client connection...
+- Trên máy bạn (Client):
+- Mở Eclipse → sửa IP trong RemoteClient.java như trên.
+- Chuột phải RemoteClient.java → Run As → Java Application.
+- Console sẽ in:
+    Connected to server 192.168.1.10:5000
+    5. Kết quả
+![alt text](image.png)
 ## 📝 4. License
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
