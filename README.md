@@ -93,4 +93,6 @@ Cấu trúc:
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
+Gmail: chinhatff@gmail.com
+
 ---
