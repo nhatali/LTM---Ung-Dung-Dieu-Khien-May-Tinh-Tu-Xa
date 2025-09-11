@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-   ỨNG DỤNG ĐIỀU KHIỂN MÁY TÍNH TỪ XA
+   ỨNG DỤNG ĐIỀU KHIỂN MÁY TÍNH TỪ XA (REMOTE )
 </h2>
 <div align="center">
     <p align="center">
@@ -20,10 +20,13 @@
 </div>
 
 ## 📖 1. Giới thiệu
-- Ứng dụng điều khiển máy tính từ xa (Remote Control) cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
+* Ứng dụng điều khiển máy tính từ xa (Remote Control) cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
+- Hệ thống cho phép một máy tính (Client) có thể kết nối và điều khiển một máy tính khác (Server/Host) theo thời gian thực.
+- Máy chủ (Remote Server): là máy tính bị điều khiển, có nhiệm vụ chia sẻ màn hình và tiếp nhận các lệnh điều khiển từ xa.
+- Máy khách (Remote Client): là máy tính điều khiển, có nhiệm vụ hiển thị màn hình từ xa và gửi các thao tác chuột, bàn phím đến máy chủ.
 - Người dùng có thể xem toàn bộ màn hình của máy từ xa.
 - Thao tác chuột, bàn phím như ngồi trực tiếp trước máy.
-- Hỗ trợ kỹ thuật (IT Support).
+- Giao diện đơn giản, dễ sử dụng, có thể mở rộng thêm tính năng bảo mật và xác thực.
 - Làm việc từ xa (Remote Work).
 - Quản trị hệ thống & server.
 
@@ -40,7 +43,7 @@
 
 ## 🚀 3. Các project đã thực hiện
 
-### [Khoá 16](./docs/projects/K16/README.md)
+
 
 ## 📝 4. License
 
