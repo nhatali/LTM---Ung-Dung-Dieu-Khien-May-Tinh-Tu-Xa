@@ -16,7 +16,7 @@ import javax.swing.JLabel;
 public class RemoteClient {
 
 	public static void main(String[] args) throws Exception {
-        String host = "127.0.0.1"; // đổi thành IP của server
+        String host = "192.168.10.1"; // đổi thành IP của máy bị điều khiển
         Socket socketImage = new Socket(host, 5000);
         Socket socketCmd = new Socket(host, 5001);
 
