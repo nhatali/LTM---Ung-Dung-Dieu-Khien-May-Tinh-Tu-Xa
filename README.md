@@ -76,10 +76,10 @@ Cấu trúc:
 
 - Console sẽ in:
 
-    Server is running on port 5000...
+    Server is running on port 5000...,
     Waiting for client connection...
 
-- Trên máy tôi (Client):
+- Trên máy điều khiển (Client):
 
 - Mở Eclipse → sửa IP trong RemoteClient.java như trên.
 
@@ -91,8 +91,12 @@ Cấu trúc:
 
 ## 📝 4. License
 
-© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
+Họ tên: Nguyễn Chí Nhật
 
-Gmail: chinhatff@gmail.com
+MSV: 1671020231
+
+Lớp: CNTT 16-03
+
+© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
 ---
