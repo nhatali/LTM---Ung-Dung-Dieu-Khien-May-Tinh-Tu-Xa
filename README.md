@@ -42,8 +42,8 @@
 
 - javax.swing → hiển thị giao diện Client.
 
-## 🚀 3. Các project đã thực hiện
-Cấu trúc:
+## 🚀 3. Các bước thực hiện
+    Cấu trúc:
 
 ![alt text](image-2.png)
 
