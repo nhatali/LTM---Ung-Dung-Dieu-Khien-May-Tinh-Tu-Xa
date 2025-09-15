@@ -42,54 +42,91 @@
 
 - javax.swing → hiển thị giao diện Client.
 
-## 🚀 3. Các bước thực hiện
+## 🚀 3. Các chức năng, hình ảnh
     Cấu trúc:
 
-![alt text](image-2.png)
 
-1. Chuẩn bị
 
-- Cài Java JDK 8+ (bạn đang dùng jre1.8.0_201 là ok).
 
-- Máy A: chạy RemoteServer.java (máy bị điều khiển – bạn bè).
-
-- Máy B: chạy RemoteClient.java (máy điều khiển – bạn).
-
-- Hai máy phải nằm cùng mạng LAN/WiFi hoặc có thể kết nối qua Internet (cần mở port).
-
-2. Lấy địa chỉ IP của Server
-
-- Trên máy bị điều khiển (máy chạy RemoteServer.java):
-
-- Windows: mở CMD → gõ ipconfig → lấy IPv4, ví dụ 192.168.1.10.
-
-- Linux/Mac: mở Terminal → gõ ifconfig
-![alt text](image-1.png)
-
-- Sau đó lấy địa chỉ IP Wifi của máy bị điều khiển thay vào host trong RemoteClient.
-
-3. Chạy chương trình
-
-- Trên máy bị điều khiển (Server):
-
-- Mở Eclipse → chuột phải RemoteServer.java → Run As → Java Application.
-
-- Console sẽ in:
-
-    Server is running on port 5000...,
-    Waiting for client connection...
-
-- Trên máy điều khiển (Client):
-
-- Mở Eclipse → sửa IP trong RemoteClient.java như trên.
-
-- Chuột phải RemoteClient.java → Run As → Java Application.
-
-5. Kết quả
 
 ![alt text](image-3.png)
 
-## 📝 4. License
+## 🚀 4. Các bước cài đặt
+
+Bước 1. Chuẩn bị môi trường
+
+Cài đặt Java JDK 8 trở lên (nên dùng JDK 11 hoặc JDK 17).
+
+Thiết lập biến môi trường JAVA_HOME và PATH để có thể dùng lệnh javac và java trong terminal/cmd.
+
+Kiểm tra bằng lệnh:
+
+java -version
+javac -version
+
+Bước 2. Tạo project
+
+Tạo một thư mục chứa source code
+
+- Bên trong có cấu trúc:
+
+![alt text](image-2.png)
+
+Bước 3. Biên dịch code
+
+- Mở terminal tại thư mục RemoteControlRMI/ và chạy:
+
+    javac remote/*.java RemoteServer.java RemoteClient.java
+
+
+- Nếu biên dịch thành công, sẽ xuất hiện các file .class.
+
+Bước 4. Khởi động server
+
+- Trên máy bị điều khiển (Server):
+
+java RemoteServer
+
+
+- Kết quả:
+
+RemoteServer đã sẵn sàng...
+
+Bước 5. Kết nối từ client
+
+Trên máy điều khiển (Client):
+
+java RemoteClient
+
+
+Trong code, nhớ đổi địa chỉ IP:
+
+Registry registry = LocateRegistry.getRegistry("172.16.xx.xx", 1099);
+
+
+👉 172.16.xx.xx chính là IP của máy server.
+
+Bước 6. Kiểm thử
+
+- Sau khi kết nối thành công:
+
+Client sẽ thấy màn hình của Server.
+
+Di chuyển chuột trên Client → chuột di chuyển trên Server.
+
+Gõ bàn phím trên Client → chữ hiển thị trên Server.
+
+Có thể mở Notepad (trên Server) rồi gõ thử từ Client để kiểm chứng.
+
+Bước 7. Mở rộng (tùy chọn)
+
+Thêm mật khẩu khi client kết nối.
+
+Thêm chức năng gửi file, chat.
+
+Chạy nhiều client cùng kết nối server.
+
+## 📝 License
 
 Họ tên: Nguyễn Chí Nhật
 
