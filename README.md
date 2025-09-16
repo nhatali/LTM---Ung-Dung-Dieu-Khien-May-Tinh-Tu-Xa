@@ -86,7 +86,7 @@ Bước 4. Kết nối từ Client
 
 java RemoteClient
 
-- Trong code, nhớ đổi địa chỉ IP:
+- Trong code, nhớ đổi địa chỉ IP (Nếu muốn điều khiển máy tính của người khác):
 
 Registry registry = LocateRegistry.getRegistry("172.16.xx.xx", 1099);
 
