@@ -92,6 +92,13 @@ Registry registry = LocateRegistry.getRegistry("172.16.xx.xx", 1099);
 
 👉 172.16.xx.xx chính là IP của máy bị điều khiển.
 
+- Cách lấy IP của máy bị điều khiển
+
+Win + R -> gõ "cmd" -> gõ "ipconfig" -> lấy IP như hình bên dưới
+
+![alt text](image-7.png)
+
+
 Bước 5. Kiểm thử
 
 Sau khi kết nối thành công:
