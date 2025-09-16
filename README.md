@@ -71,7 +71,7 @@ Bước 2. Tạo project
 
 - Bên trong có cấu trúc:
 
-![alt text](image-2.png)
+![alt text](image-5.png)
 
 Bước 3. Khởi động server
 
@@ -97,7 +97,7 @@ Registry registry = LocateRegistry.getRegistry("172.16.xx.xx", 1099);
 
 Bước 5. Kiểm thử
 
-   Sau khi kết nối thành công:
+Sau khi kết nối thành công:
 
 - Client sẽ thấy màn hình của Server.
 
