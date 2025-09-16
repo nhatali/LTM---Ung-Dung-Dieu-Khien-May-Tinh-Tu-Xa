@@ -21,26 +21,23 @@
 
 ## 📖 1. Giới thiệu
     Ứng dụng điều khiển máy tính từ xa (Remote Control) 
-- Cho phép người dùng truy cập, theo dõi và điều khiển máy tính ở xa thông qua mạng Internet hoặc mạng LAN.
-- Hệ thống cho phép một máy tính (Client) có thể kết nối và điều khiển một máy tính khác (Server/Host) theo thời gian thực.
-- Máy chủ (Remote Server): là máy tính bị điều khiển, có nhiệm vụ chia sẻ màn hình và tiếp nhận các lệnh điều khiển từ xa.
-- Máy khách (Remote Client): là máy tính điều khiển, có nhiệm vụ hiển thị màn hình từ xa và gửi các thao tác chuột, bàn phím đến máy chủ.
-- Người dùng có thể xem toàn bộ màn hình của máy từ xa.
-- Thao tác chuột, bàn phím như ngồi trực tiếp trước máy.
-- Giao diện đơn giản, dễ sử dụng, có thể mở rộng thêm tính năng bảo mật và xác thực.
-- Làm việc từ xa (Remote Work).
-- Quản trị hệ thống & server.
+- Ứng dụng điều khiển máy tính từ xa (Remote Control) là một hệ thống cho phép người dùng có thể thao tác và quản lý một máy tính khác thông qua kết nối mạng. Nhờ đó, bạn có thể sử dụng bàn phím, chuột, và theo dõi màn hình của máy tính bị điều khiển ngay trên máy tính của mình, giống như đang ngồi trực tiếp tại đó.
+
+- Hỗ trợ kỹ thuật từ xa (IT Helpdesk).
+
+- Quản trị hệ thống và máy chủ.
+
+- Làm việc từ xa và truy cập tài nguyên tại văn phòng.
+
+- Học tập, trình bày hoặc hướng dẫn trực tuyến.
 
 ## 🔧 2. Ngôn ngữ lập trình sử dụng: [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
-    Thư viện sử dụng trong Java:
 
-- java.net → Socket, ServerSocket (gửi/nhận dữ liệu).
+- Java hỗ trợ lập trình mạng mạnh mẽ với thư viện sẵn có (Socket, RMI).
 
-- java.awt.Robot → điều khiển chuột, bàn phím.
+- RMI (Remote Method Invocation) của Java cho phép gọi phương thức từ xa dễ dàng, phù hợp để xây dựng mô hình Client – Server trong đề tài.
 
-- javax.imageio.ImageIO → đọc/ghi ảnh (truyền màn hình).
-
-- javax.swing → hiển thị giao diện Client.
+- Có thể chạy đa nền tảng (Windows, Linux, macOS) mà không cần chỉnh sửa nhiều mã nguồn.
 
 ## 🚀 3. Các chức năng, hình ảnh
 
