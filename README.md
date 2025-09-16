@@ -47,7 +47,7 @@
 
 - Sau khi chạy RemoteClient.java:
 
-![alt text](image-3.png)
+![alt text](image-6.png)
 
 ## 🚀 4. Các bước cài đặt
 
