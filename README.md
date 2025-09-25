@@ -33,12 +33,10 @@
 
 ## 🔧 2. Ngôn ngữ lập trình sử dụng: [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
 
-- Java hỗ trợ lập trình mạng mạnh mẽ với thư viện sẵn có (Socket, RMI).
-
-- RMI (Remote Method Invocation) của Java cho phép gọi phương thức từ xa dễ dàng, phù hợp để xây dựng mô hình Client – Server trong đề tài.
-
-- Có thể chạy đa nền tảng (Windows, Linux, macOS) mà không cần chỉnh sửa nhiều mã nguồn.
-
+Java được lựa chọn vì:  
+- Hỗ trợ sẵn RMI (Remote Method Invocation) để giao tiếp từ xa.  
+- Có thư viện chuẩn cho xử lý mạng, giao diện đồ họa, và Robot API để điều khiển chuột, bàn phím.  
+- Tính đa nền tảng, dễ triển khai trên nhiều hệ điều hành.  
 ## 🚀 3. Các chức năng, hình ảnh
 
 - Sau khi chạy RemoteServer.java:
@@ -51,73 +49,78 @@
 
 ## 🚀 4. Các bước cài đặt
 
-Bước 1. Chuẩn bị môi trường
+### 1. Yêu cầu
+- Cài đặt **Java Development Kit (JDK 8+)**
+  - Kiểm tra bằng lệnh:
+    ```bash
+    java -version
+    javac -version
+    ```
+- Cài đặt **Git** (để clone source code).
+- Máy chủ (server) và máy khách (client) phải kết nối chung mạng LAN hoặc có cấu hình port forwarding nếu qua Internet.
 
-- Cài đặt Java JDK 8 trở lên.
+---
 
-- Thiết lập biến môi trường JAVA_HOME và PATH để có thể dùng lệnh javac và java trong terminal/cmd.
+### 2. Clone dự án
+Dùng Git để tải project về máy:
+```bash
+git clone https://github.com/<username>/<repo>.git
+cd <repo>
+```
+---
 
-- Kiểm tra bằng lệnh:
+### 3. Biên dịch source code
+```bash
+javac remote/*.java
+```
 
-java -version
-javac -version
+---
 
-Bước 2. Tạo project
+### 4. Chạy chương trình
+🖥️ Trên Windows
+Mở 2 cửa sổ Command Prompt:
 
-- Tạo một thư mục chứa source code
+- Cửa sổ 1 (Server – máy bị điều khiển):
+```bash
+Mở cmd
 
-- Bên trong có cấu trúc:
+cd path\to\project
 
-![alt text](image-5.png)
+java remote.RemoteServer
+```
+- Cửa sổ 2 (Client – máy điều khiển):
+```bash
+Mở cmd
 
-Bước 3. Khởi động server
+cd path\to\project
 
-- Trên máy bị điều khiển (Server):
+java remote.RemoteClient
 
-java RemoteServer
+➝ Khi được hỏi, nhập IP của Server.
+```
+- Cách lấy địa chỉ IP của Server:
+```bash
+Mở cmd
 
-- Kết quả:
+Nhập "ipconfig"
 
-RemoteServer đã sẵn sàng...
+Tìm địa chỉ IP LAN như hình dưới:
+```
+![alt text](image.png)
 
-Bước 4. Kết nối từ Client
+---
 
-- Trên máy điều khiển (Client):
+### 5. Bắt đầu điều khiển
+```bash
+Client sẽ hiện cửa sổ màn hình của Server.
 
-java RemoteClient
+Các chức năng:
 
-- Trong code, nhớ đổi địa chỉ IP (Nếu muốn điều khiển máy tính của người khác):
+Click chuột trên máy Server.
 
-Registry registry = LocateRegistry.getRegistry("172.16.xx.xx", 1099);
+Di chuyển chuột trên màn hình Server.
 
-👉 172.16.xx.xx chính là IP của máy bị điều khiển.
-
-- Cách lấy IP của máy bị điều khiển
-
-Win + R -> gõ "cmd" -> gõ "ipconfig" -> lấy IP như hình bên dưới
-
-![alt text](image-7.png)
-
-
-Bước 5. Kiểm thử
-
-Sau khi kết nối thành công:
-
-- Client sẽ thấy màn hình của Server.
-
-- Di chuyển chuột trên Client → chuột di chuyển trên Server.
-
-- Gõ bàn phím trên Client → chữ hiển thị trên Server.
-
-- Có thể mở Notepad (trên Server) rồi gõ thử từ Client để kiểm chứng.
-
-Bước 6. Mở rộng (tùy chọn)
-
-- Thêm mật khẩu khi client kết nối.
-
-- Thêm chức năng gửi file, chat.
-
-- Chạy nhiều client cùng kết nối server.
+```
 
 ## 📝 License
 
