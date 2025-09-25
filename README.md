@@ -61,12 +61,10 @@ Java được lựa chọn vì:
 
 ---
 
-### 2. Clone dự án
-Dùng Git để tải project về máy:
-```bash
-git clone https://github.com/<username>/<repo>.git
-cd <repo>
-```
+### 2. Cấu trúc dự án
+- Cấu trúc dự án như hình bên dưới:
+
+![alt text](image-1.png)
 ---
 
 ### 3. Biên dịch source code
