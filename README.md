@@ -43,8 +43,11 @@ Java được lựa chọn vì:
 
 ![alt text](image-3.png)
 
-- Sau khi chạy RemoteClient.java:
+- Sau khi chạy RemoteClient.java sẽ hiện một giao diện cho người điều khiển nhập địa chỉ IP máy bị điều khiển:
 
+![alt text](image-4.png)
+
+- Sau khi nhập địa chỉ IP thì được kết quả như hình dưới:
 ![alt text](image-2.png)
 
 ## 🚀 4. Các bước cài đặt
