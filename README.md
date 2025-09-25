@@ -41,11 +41,11 @@ Java được lựa chọn vì:
 
 - Sau khi chạy RemoteServer.java:
 
-![alt text](image-4.png)
+![alt text](image-3.png)
 
 - Sau khi chạy RemoteClient.java:
 
-![alt text](image-6.png)
+![alt text](image-2.png)
 
 ## 🚀 4. Các bước cài đặt
 
